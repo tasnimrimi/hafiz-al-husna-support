@@ -12,33 +12,45 @@
     main { max-width: 760px; margin: 0 auto; padding: 72px 24px; }
     .mark { display: block; width: 112px; height: 112px; border-radius: 24px; }
     h1 { margin: 24px 0 12px; font-size: clamp(38px, 8vw, 64px); line-height: 1; }
+    .eyebrow { margin: 22px 0 8px; color: #086b5c; font-size: 14px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
     .lead { max-width: 640px; color: #53615c; font-size: 20px; line-height: 1.6; }
     section { margin-top: 42px; padding: 28px; border: 1px solid #e8e0cf; border-radius: 24px; background: #fffdf7; }
     h2 { margin-top: 0; }
     li { margin: 10px 0; }
     a { color: #086b5c; font-weight: 700; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .button { display: inline-block; padding: 12px 18px; border-radius: 999px; background: #086b5c; color: white; text-decoration: none; }
+    .button.secondary { border: 1px solid #086b5c; background: transparent; color: #086b5c; }
     footer { margin-top: 36px; color: #68736f; line-height: 1.7; }
   </style>
 </head>
 <body>
   <main>
     <img class="mark" src="app-logo.png" width="112" height="112" alt="Hafiz Al-Husna app logo">
+    <p class="eyebrow">Islamic memorization learning app</p>
     <h1>Hafiz Al-Husna</h1>
-    <p class="lead">Build a lasting connection with the Names of Allah through focused five-name levels, quizzes, daily goals, streaks, and meaningful achievements.</p>
+    <p class="lead">Hafiz Al-Husna helps learners memorize Allah and the 99 Beautiful Names through focused lessons, recall challenges, daily goals, streaks, and meaningful achievements.</p>
+    <div class="actions">
+      <a class="button" href="https://play.google.com/store/apps/details?id=com.tasnimrimi.namesofallah">View Hafiz Al-Husna on Google Play</a>
+      <a class="button secondary" href="privacy.html">Privacy policy</a>
+    </div>
 
     <section>
-      <h2>Learn at your pace</h2>
+      <h2>What Hafiz Al-Husna does</h2>
       <ul>
-        <li>Study 100 Names, beginning with Allah and continuing through the 99 Beautiful Names.</li>
-        <li>Unlock each new level by demonstrating what you remember.</li>
-        <li>Keep learning offline and optionally sync progress across devices with Google sign-in.</li>
+        <li>Study 100 Names, beginning with Allah and continuing through the 99 Beautiful Names, arranged into twenty five-name levels.</li>
+        <li>Complete recall challenges and earn at least four stars to unlock the next level.</li>
+        <li>Redo completed levels for practice without incorrectly adding repeated learning rewards.</li>
+        <li>Build daily streaks, earn XP, and unlock twenty Islamic-themed achievements.</li>
+        <li>Learn offline on one device or optionally use Google sign-in to preserve progress across devices.</li>
       </ul>
     </section>
 
     <section>
-      <h2>Privacy and account control</h2>
-      <p>Google sign-in is optional. Signed-in progress is stored in a private Supabase record protected for that account. Users can sign out or permanently delete their account and synced progress.</p>
-      <p><a href="privacy.html">Read the privacy policy</a> · <a href="account-deletion.html">Account deletion instructions</a></p>
+      <h2>Why Hafiz Al-Husna requests Google user data</h2>
+      <p>Google sign-in is optional and is used only to identify the learner and connect that learner to a private saved-progress record. Google provides an account identifier, email address, and basic profile information during sign-in. Hafiz Al-Husna uses this information for authentication and progress synchronization; it does not request access to Gmail, Google Drive, contacts, calendars, or passwords.</p>
+      <p>Signed-in learning progress—including XP, streak, learned Names, quiz results, level stars, favorites, achievements, and last activity—is stored in a private Supabase PostgreSQL record associated with that account. Users can sign out or permanently delete their account and synchronized progress.</p>
+      <p><a href="privacy.html">Read the Hafiz Al-Husna privacy policy</a> · <a href="account-deletion.html">Account deletion instructions</a></p>
     </section>
 
     <footer>
